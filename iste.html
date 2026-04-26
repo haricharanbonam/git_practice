@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRKR ISTE - Shape Your Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'iste-gold': '#f3c23c',
+                        'iste-dark': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #f3c23c 0%, #ffeb3b 50%, #ffc107 100%);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                              radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 0%, transparent 50%);
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .slide-in {
+            animation: slideIn 0.8s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .pulse-glow {
+            animation: pulseGlow 2s infinite;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(243, 194, 60, 0.6); }
+            50% { box-shadow: 0 0 40px rgba(243, 194, 60, 0.8); }
+        }
+    </style>
+</head>
+<body class=" text-white overflow-x-hidden">
+
+    <section class="min-h-screen gradient-bg hero-pattern relative overflow-hidden">
+        <div class="absolute top-20 left-10 w-20 h-20 bg-white bg-opacity-20 rounded-full floating" style="animation-delay: 0s;"></div>
+        <div class="absolute top-40 right-20 w-16 h-16 bg-white bg-opacity-15 rounded-full floating" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-40 left-20 w-24 h-24 bg-white bg-opacity-10 rounded-full floating" style="animation-delay: 4s;"></div>
+        
+        <div class="container mx-auto px-6 flex flex-col justify-center items-center min-h-screen text-center relative z-10">
+            <div class="flex items-center justify-center gap-8 mb-8 slide-in">
+                <img src="https://srkriste.vercel.app/images/srkr.png" alt="SRKR Logo" class="w-20 h-20 object-contain">
+                <div class="text-center">
+                    <h1 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+                        INDIAN SOCIETY FOR<br>TECHNICAL EDUCATION
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-800 mt-2">SRKR ENGINEERING COLLEGE(A), BHIMAVARAM</p>
+                </div>
+                <img src="https://srkriste.vercel.app/images/iste.png" alt="ISTE Logo" class="w-20 h-20 object-contain">
+            </div>
+            
+            <div class="slide-in" style="animation-delay: 0.3s;">
+                <h2 class="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
+                    28 YEARS OF<br><span class="text-iste-dark">LEGACY</span>
+                </h2>
+                <p class="text-2xl md:text-3xl text-gray-800 font-semibold mb-6">
+                    At ISTE, we shape the present to sculpt the future.
+                </p>
+                <p class="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl">
+                    Our innovative events forge leaders through empowerment.
+                </p>
+            </div>
+            
+            <div class="slide-in" style="animation-delay: 0.6s;">
+                <a href="https://srkriste.vercel.app/" target="_blank" 
+                   class="inline-block bg-gray-800 hover:bg-gray-900 text-white px-12 py-6 rounded-full text-2xl font-bold transition-all duration-300 transform hover:scale-105 pulse-glow shadow-2xl">
+                    🚀 Visit Official ISTE Website
+                </a>
+                <p class="text-gray-700 mt-4 text-lg">Register • Join • Excel</p>
+            </div>
+        </div>
+        
+        <!-- <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-800 animate-bounce">
+            <div class="flex flex-col items-center">
+                <span class="text-sm mb-2">Discover More</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div> -->
+    </section>
+
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-iste-gold mb-6">What is ISTE?</h2>
+                <div class="w-24 h-1 bg-iste-gold mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-iste-gold rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-gray-900 font-bold">1941</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-iste-gold mb-2">Established Legacy</h3>
+                            <p class="text-gray-300">Started as APTI in 1941, became ISTE in 1968. A national level non-profitable society.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-iste-gold rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-gray-900 font-bold">1.24L+</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-iste-gold mb-2">Massive Community</h3>
+                            <p class="text-gray-300">Over 1,24,000 professionals across India - teachers, students, and industry experts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-iste-gold rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-gray-900 font-bold">28</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-iste-gold mb-2">Years at SRKR</h3>
+                            <p class="text-gray-300">28+ years of empowering students at SRKR with the motto: "Believe in yourself and your ability to succeed."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-700 p-8 rounded-2xl">
+                    <img src="https://srkriste.vercel.app/images/iste.png" alt="ISTE Community" class="w-full h-64 object-contain rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-iste-gold mb-4">Why Join ISTE?</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center"><span class="text-iste-gold mr-2">✓</span> National recognition and membership card</li>
+                        <li class="flex items-center"><span class="text-iste-gold mr-2">✓</span> Access to IIT & NIT events</li>
+                        <li class="flex items-center"><span class="text-iste-gold mr-2">✓</span> Exclusive discounts on NIPUNA fest</li>
+                        <li class="flex items-center"><span class="text-iste-gold mr-2">✓</span> Career advancement opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-iste-gold mb-6">5 Amazing Departments</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Choose your passion, develop your skills, and create something extraordinary</p>
+                <div class="w-24 h-1 bg-iste-gold mx-auto mt-8"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                    <img src="https://srkriste.vercel.app/images/ps.jpeg" alt="Photoshop Department" class="w-full h-48 object-contain">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-iste-gold mb-3">🎨 Photoshop</h3>
+                        <p class="text-gray-300 leading-relaxed">Transform raw images into refined compositions. Master digital editing and design techniques that captivate and create visual wonders.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                    <img src="https://srkriste.vercel.app/images/webdept.jpeg" alt="Web Department" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-iste-gold mb-3">💻 Web Development</h3>
+                        <p class="text-gray-300 leading-relaxed">Shape digital experiences! Transform ideas into interactive websites using cutting-edge programming languages and innovative features.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                    <img src="https://srkriste.vercel.app/images/vfx.jpg" alt="VFX Department" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-iste-gold mb-3">🎬 VFX</h3>
+                        <p class="text-gray-300 leading-relaxed">Bring fantastical worlds to life! Fuse technical expertise with creative imagination to create stunning visual effects and animations.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                    <img src="https://srkriste.vercel.app/images/content.png" alt="Content Department" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-iste-gold mb-3">📝 Content</h3>
+                        <p class="text-gray-300 leading-relaxed">Transform ideas into captivating narratives. Master language and storytelling to forge deep connections and lasting impact.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl lg:col-span-2 md:col-span-2">
+                    <div class="md:flex">
+                        <img src="https://srkriste.vercel.app/images/artdept.jpg" alt="Art Department" class="w-full md:w-1/2 h-48 md:h-auto object-cover">
+                        <div class="p-6 md:w-1/2 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-iste-gold mb-3">🎭 Art</h3>
+                            <p class="text-gray-300 leading-relaxed mb-4">Where design meets feelings. Explore painting, handicrafts, and creative art models. Nurture your mind to think, heart to express, and hands to craft unique masterpieces.</p>
+                            <div class="flex space-x-2">
+                                <span class="px-3 py-1 bg-iste-gold text-gray-900 rounded-full text-sm font-semibold">Painting</span>
+                                <span class="px-3 py-1 bg-iste-gold text-gray-900 rounded-full text-sm font-semibold">Handicrafts</span>
+                                <span class="px-3 py-1 bg-iste-gold text-gray-900 rounded-full text-sm font-semibold">Models</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-2xl text-iste-gold font-bold">--- Explore --- Experience --- Excel ---</p>
+                <p class="text-xl text-gray-300 mt-2">Success begins with a click</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-bold text-iste-gold mb-6">NIPUNA</h2>
+                <p class="text-2xl text-gray-300 mb-4">National Level Techno-Management Symposium</p>
+                <div class="w-32 h-1 bg-iste-gold mx-auto mb-8"></div>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                    For almost every year, NIPUNA stands as a symbol of excellence and innovation. 
+                    The ultimate platform where students showcase their talents and compete at a national level!
+                </p>
+            </div>
+            
+            <div class="mb-16">
+                <img src="https://srkriste.vercel.app/images/23.jpg" alt="NIPUNA 2023" class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl">
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="w-16 h-16 bg-iste-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🎤</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-iste-gold mb-4">Presentational Events</h3>
+                    <p class="text-gray-300">Master communication, eloquence, and impactful presentations with expert guidance.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="w-16 h-16 bg-iste-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🎨</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-iste-gold mb-4">Artistic Events</h3>
+                    <p class="text-gray-300">Unleash creativity through painting, photography, sculpting, and digital art forms.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="w-16 h-16 bg-iste-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">💼</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-iste-gold mb-4">Managerial Events</h3>
+                    <p class="text-gray-300">Develop decision-making, strategic thinking, and leadership excellence.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="w-16 h-16 bg-iste-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">📚</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-iste-gold mb-4">Literature Events</h3>
+                    <p class="text-gray-300">Master storytelling, linguistic elegance, and persuasive writing skills.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="w-16 h-16 bg-iste-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-iste-gold mb-4">Technical Events</h3>
+                    <p class="text-gray-300">Push innovation boundaries with coding, robotics, and cutting-edge technology.</p>
+                </div>
+                
+                <div class="bg-iste-gold p-8 rounded-2xl text-center hover:transform hover:scale-105 transition-all duration-300 text-gray-900">
+                    <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl text-iste-gold">🏆</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">National Competition</h3>
+                    <p>Compete with the best minds from across India and showcase your talents on a national stage!</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <p class="text-3xl text-iste-gold font-bold mb-4">Ready to compete at the national level?</p>
+                <p class="text-xl text-gray-300">NIPUNA awaits your talent and creativity!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-iste-gold mb-6">Year-Round Events</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">From workshops to competitions, we keep the excitement alive throughout the year!</p>
+                <div class="w-24 h-1 bg-iste-gold mx-auto mt-8"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://srkriste.vercel.app/images/events1.jpeg" alt="Cross Roads Event" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-bold text-lg">CROSS ROADS</h4>
+                            <p class="text-sm">Concept to Creation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://srkriste.vercel.app/images/events49.jpg" alt="Click-o-mania Event" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-bold text-lg">CLICK-O-MANIA</h4>
+                            <p class="text-sm">Photography Contest</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://srkriste.vercel.app/images/events6.jpg" alt="JAM Event" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-bold text-lg">JAM</h4>
+                            <p class="text-sm">Spur of the Moment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://srkriste.vercel.app/images/events53.jpg" alt="Webinar Event" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-bold text-lg">WEBINARS</h4>
+                            <p class="text-sm">Career Guidance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-2xl text-center">
+                    <h3 class="text-xl font-bold text-iste-gold mb-4">🔬 Technical Workshops</h3>
+                    <p class="text-gray-300">Coding, Robotics, AI/ML, and emerging technologies</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-2xl text-center">
+                    <h3 class="text-xl font-bold text-iste-gold mb-4">🎯 Skill Development</h3>
+                    <p class="text-gray-300">Communication, Leadership, and Professional skills</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-2xl text-center">
+                    <h3 class="text-xl font-bold text-iste-gold mb-4">🌟 Cultural Events</h3>
+                    <p class="text-gray-300">Festivals, Competitions, and Creative showcases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-iste-gold mb-6">SAHARA</h2>
+                <p class="text-2xl text-gray-300 mb-4">Aspire to Inspire</p>
+                <div class="w-24 h-1 bg-iste-gold mx-auto mb-8"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Beyond academics, ISTE contributes to society through SAHARA - our social welfare program 
+                    aimed at community development and building a prosperous, harmonious society.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://srkriste.vercel.app/images/events41.jpg" alt="SAHARA Initiative" class="w-full rounded-2xl shadow-2xl">
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-iste-gold rounded-full flex items-center justify-center">
+                            <span class="text-2xl">📚</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-iste-gold">Educational Support</h3>
+                            <p class="text-gray-300">Supporting young minds in their educational journey</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-iste-gold rounded-full flex items-center justify-center">
+                            <span class="text-2xl">🌱</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-iste-gold">Community Development</h3>
+                            <p class="text-gray-300">Programs focused on societal growth and harmony</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-iste-gold rounded-full flex items-center justify-center">
+                            <span class="text-2xl">💡</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-iste-gold">Social Awareness</h3>
+                            <p class="text-gray-300">Creating awareness about important social issues</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-iste-gold p-6 rounded-2xl text-gray-900 mt-8">
+                        <h3 class="text-xl font-bold mb-2">Make a Difference!</h3>
+                        <p>Join ISTE and be part of meaningful social initiatives that create lasting impact in our community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 gradient-bg hero-pattern">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Ready to Join the Legacy?</h2>
+            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+                Become a part of our thriving community of innovators, leaders, and creators. Your journey towards excellence starts here.
+            </p>
+            <a href="https://srkriste.vercel.app/" target="_blank" class="inline-block bg-gray-800 hover:bg-gray-900 text-white px-12 py-6 rounded-full text-2xl font-bold transition-all duration-300 transform hover:scale-105 pulse-glow shadow-2xl">
+                Register for ISTE Membership
+            </a>
+            <p class="text-gray-700 mt-4 text-lg">Shape your future with us!</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-12 border-t border-gray-700">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
+                        <img src="https://srkriste.vercel.app/images/srkr.png" alt="SRKR Logo" class="w-12 h-12">
+                        <img src="https://srkriste.vercel.app/images/iste.png" alt="ISTE Logo" class="w-12 h-12">
+                    </div>
+                    <h3 class="text-xl font-bold text-iste-gold mb-2">SRKR ISTE</h3>
+                    <p class="text-gray-400 max-w-md">
+                        W Block-201, SRKR Engineering College<br>
+                        Bhimavaram - 534204<br>
+                        📧 studentschapter@srkriste.in
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <h4 class="text-lg font-semibold text-iste-gold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4 justify-center">
+                        <a href="https://www.facebook.com/SrkrIste?mibextid=ZbWKwL" target="_blank" 
+                           class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                            <span class="text-white text-2xl font-bold">f</span>
+                        </a>
+                        <a href="https://www.instagram.com/srkriste?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" 
+                           class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                            <span class="text-white text-2xl">📷</span>
+                        </a>
+                        <a href="https://www.linkedin.com/company/srkriste/" target="_blank" 
+                           class="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                           <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@srkriste1995?si=FJIk6QGKYsTnTDND" target="_blank" 
+                           class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                           <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2024 SRKR ISTE. All Rights Reserved.</p>
+                <p class="text-iste-gold mt-2 font-semibold">Shape the present to sculpt the future</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all sections and footer divs
+            document.querySelectorAll('section > div, footer > div').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.8s ease-out';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
